@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+/* more headers goes there */
 #include <time.h>
+/* betty style doc for function main goes there */
 /**
-* main - A c program that takes a variable and prints a negative or positive number
+* main - A c program that prints a + or - number
 * Return: 0 (Success)
 */
 int main(void)
@@ -11,19 +13,19 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	if (n > 0)
+	/* your code goes there */
+	if (n > 0}
 	{
-		printf("%i is positive\n", n);
+	 printf("%i is positive", n);
 	}
 	else if (n == 0)
 	{
-		printf("%i is zero\n", n);
+	printf("%i is zero", n);
 	}
 	else
 	{
-		printf("%i is negative\n", n);
+	printf("%i is negative", n);
 	}
-
+	printf("\n");
 	return (0);
 }
