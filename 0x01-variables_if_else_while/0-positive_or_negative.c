@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* more headers goes there */
 #include <time.h>
 /* betty style doc for function main goes there */
 /**
 * main - A c program that prints a + or - number
-* Return: 0 (Success)
+* Return: always 0
 */
 int main(void)
 {
@@ -14,9 +13,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
+
 	if (n > 0)
 	{
-	 printf("%i is positive", n);
+	printf("%i is positive", n);
 	}
 	else if (n == 0)
 	{
