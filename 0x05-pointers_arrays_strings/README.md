@@ -9,3 +9,5 @@
 - 7-puts_half.c
 - 8-print_array.c
 - 9-strcpy.c
+- 100-atoi.c
+- 101-keygen.c
