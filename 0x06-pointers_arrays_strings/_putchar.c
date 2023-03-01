@@ -1,15 +1,12 @@
-#ifndef main_h
-#define main_h
+#include "main.h"
+#include <unistd.h>
 
-
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-void reverse_array(int *a, int n);
-char *string_toupper(char *);
-char *cap_string(char *);
-char *leet(char *);
-int _putchar(char c);
-
-#endif
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: 1
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
