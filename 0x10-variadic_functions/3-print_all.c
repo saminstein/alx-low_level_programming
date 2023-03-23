@@ -15,7 +15,6 @@ void print_all(const char * const format, ...)
 	const char t_arg[] = "cifs";
 
 	va_start(list, format);
-
 	while (format && format[i])
 	{
 		j = 0;
@@ -27,7 +26,6 @@ void print_all(const char * const format, ...)
 				break;
 			} j++;
 		}
-
 		switch (format[i])
 		{
 		case 'c':
@@ -50,7 +48,5 @@ void print_all(const char * const format, ...)
 			break;
 		} i++;
 	}
-	printf("\n");
-
-	va_end(list);
+	printf("\n"), va_end(list);
 }
