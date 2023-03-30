@@ -16,3 +16,5 @@
 - 0x0E. C - Structures, typedef
 - 0x0F. C - Function pointer
 - 0x10. C - Variadic functions
+- 0x11. C - printf
+- 0x12. C - Singly linked lists
