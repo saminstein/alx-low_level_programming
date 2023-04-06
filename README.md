@@ -18,4 +18,6 @@
 - 0x10. C - Variadic functions
 - 0x11. C - printf
 - 0x12. C - Singly linked lists
-- 0x13. C - More singly linked lists
+- 0x13. C - More singly linked list
+- 0x14. C - Bit manipulation
+- 0x15. C - File I/O
