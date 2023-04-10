@@ -30,7 +30,7 @@ int main(int ac, char **av)
  */
 void copy_files(const char *src, const char *dest)
 {
-	int file_from, file_to, read_ch = 0;
+	int file_from, file_to, read_ch, write_ch;
 	char buffer[1024];
 
 	file_from = open(src, O_RDONLY);
@@ -41,10 +41,12 @@ void copy_files(const char *src, const char *dest)
 	}
 
 	file_to = open(dest, O_CREAT | O_TRUNC | O_WRONLY, 0664);
-	while (read_ch > 0)
+
+	read_ch = read(file_from, buffer, 1024);
+	while (read_ch == 1024)
 	{
-		read_ch = read(file_from, buffer, 1024);
-		if (file_to == -1)
+		write_ch = write(file_to, buffer, read_ch);
+		if ((write_ch != read_ch) || file_to == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 			exit(99);
