@@ -19,3 +19,4 @@
 - 0x11. C - printf
 - 0x12. C - Singly linked lists
 - 0x13. C - More singly linked list
+- 0x14. C - Bit manipulation
