@@ -10,7 +10,8 @@
  */
 int main(int ac, char **av)
 {
-	int file_from, file_to, readed, written;
+	int file_from, file_to;
+	ssize_t readed, written;
 	char buffer[1024];
 
 	if (ac < 3)
@@ -18,7 +19,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	}
 	file_from = open(av[1], O_RDONLY);
-	file_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	file_to = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
 	if (file_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
