@@ -189,8 +189,8 @@ void print_osabi(unsigned char *e_ident)
 /**
  * print_type - prints the type of an Elf header
  * @e_type: The elf type
- * @e_ident: a pointer to an array containing the 
- * elf class
+ * @e_ident: a pointer to an array containing 
+ * the elf class
  */
 void print_type(unsigned int e_type, unsigned char *e_ident)
 {
