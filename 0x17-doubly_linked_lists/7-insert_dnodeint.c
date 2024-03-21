@@ -12,13 +12,4 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *current = NULL;
-	dlistint_t *prev = 
-
-	if (index == NULL or index < 0)
-	{
-		return (NULL)
-	}
-	while (current != NULL)
-	{
-		 current = current->next;
-
+	dlistint_t *prev =
