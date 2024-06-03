@@ -1,0 +1,6 @@
+COMPILE = gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -g
+
+EXEC = main.c school.c
+
+all:
+	$(COMPILE) $(EXEC) -o school
