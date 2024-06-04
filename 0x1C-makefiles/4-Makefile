@@ -1,5 +1,7 @@
 CC = gcc
 
+CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 -g
+
 SRC = main.c school.c
 
 OBJ = ${SRC:%.c=%.o}
@@ -7,8 +9,6 @@ OBJ = ${SRC:%.c=%.o}
 NAME = school
 
 RM = rm rf
-
-CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 -g
 
 all: ${OBJ}
 	${CC} ${CFLAGS} ${OBJ} -o ${NAME}
@@ -22,3 +22,4 @@ oclean:
 fclean: clean oclean
 
 re: oclean all
+
