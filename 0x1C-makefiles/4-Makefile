@@ -11,7 +11,7 @@ RM = rm rf
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 -g
 
 all: ${OBJ}
-	${CC} ${OBJ} -o ${NAME}
+	${CC} ${CFLAGS} ${OBJ} -o ${NAME}
 
 clean:
 	${RM} *~ ${NAME}
